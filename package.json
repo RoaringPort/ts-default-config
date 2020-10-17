@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "name": "enter here your name",
+  "author": "enter here your name",
+  "private": true,
+  "description": "",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.9.3"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn type-check"
+    }
+  }
+}
